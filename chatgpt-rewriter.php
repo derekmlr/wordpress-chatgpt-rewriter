@@ -1,13 +1,13 @@
 <?php
 /*
   Plugin Name: ChatGPT Rewriter
-  Plugin URI: https://gaminghybrid.com
+  Plugin URI: https://github.com/derekmlr/wordpress-chatgpt-rewriter
   Description: Rewrites post content using ChatGPT before publishing.
   Version: 1.0
   Author: Derek
-  Author URI: https://gaminghybrid.com
+  Author URI: https://github.com/derekmlr
   License: GPLv2 or later
-  Text Domain: chatgpt-rewriterr
+  Text Domain: chatgpt-rewriter
 */
 
 // Check if the necessary functions exist.
