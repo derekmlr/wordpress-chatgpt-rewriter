@@ -16,10 +16,7 @@ function chatgpt_rewriter_add_meta_box() {
 
 // Render the original content meta box.
 function chatgpt_rewriter_meta_box_callback($post) {
-  // Get the original content for the current post
   $original_content = get_post_meta($post->ID, 'chatgpt_original_content', true);
-
-  // Display the original content in a read-only textarea
   echo '<textarea readonly style="width: 100%; height: 200px;">' . esc_textarea($original_content) . '</textarea>';
 }
 

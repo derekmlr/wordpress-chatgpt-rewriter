@@ -25,23 +25,15 @@ function chatgpt_rewriter_register_settings() {
 
 // Render the settings page HTML.
 function chatgpt_rewriter_settings_page_html() {
-  // Check if the user is allowed to update options.
-  if (!current_user_can('manage_options')) {
-    return;
-  }
+  if (!current_user_can('manage_options')) return;
 
   ?>
   <div class="wrap">
     <h1><?php echo esc_html(get_admin_page_title()); ?></h1>
     <form action="options.php" method="post">
       <?php
-      // Output security fields for the registered setting.
       settings_fields('chatgpt-rewriter');
-
-      // Output setting sections and their fields.
       do_settings_sections('chatgpt-rewriter');
-
-      // Output save settings button.
       submit_button('Save Settings');
       ?>
       <table class="form-table">
